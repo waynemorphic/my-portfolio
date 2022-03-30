@@ -1,0 +1,15 @@
+* {
+    background-color: #0F2027;
+    
+}
+body {
+    box-sizing: border-box;
+    
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+    color: bisque;
+    font-size: 1.3rem;
+}
