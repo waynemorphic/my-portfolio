@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+
+* {
+    background-color: black;
+}
+
+body {
+    box-sizing: border-box;
+    /* border: 7px solid #0FFD35;  */
+    margin: 15px 15px 105px 75px;   
+    
+}
+
+/* navigation bar links */
+.link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #90d7ff;
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Cormorant', serif;
+    /* transition: color 2s; */
+}
+
+.link:hover {
+    color:#0FFD35;
+    font-size: 1.65rem;    
+}
+
+.link:active {
+    color: blue;
+}
+
+/* my name heading */
+.main-heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color:#0FFD35;     
+}
+
+/* section headings */
+.name-head {
+font-size: 2.5rem;
+color:#90d7ff; 
+word-spacing: 2px;
+font-family: 'Cormorant', serif;
+
+}
+
+/* introductory paragraph */
+.intro-par {
+    margin-top: 10px;
+    word-spacing: 2px;
+    font-size: 1rem;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Body paragraphs */
+.pars {
+    color:#0FFD35; 
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'Fira Code', monospace;
+
+}
+
+/* Resume circles with downloadable cv */
+.outer {
+    background-color: black;
+    height: 12rem;
+    width: 12rem;  
+    border-radius: 50%;
+    border: 2px solid #0FFD35;  
+    border-style: double dashed;
+    float: right
+}
+
+.center-f-inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#0FFD35;
+    
+    
+}
+
+.inner {
+    background-color: black;
+    height: 10rem;
+    width: 10rem;  
+    border-radius: 50%;
+    border: 2px solid #0FFD35;
+    border-style: dashed;
+}
+
+
+/* contact, location and copyright details */
+.close {
+    color:#90d7ff;
+    font-size: 1.2em;
+    font-family: 'Cormorant', serif;
+}
+
+
+/* Stack logos for various languages and frameworks */
+.skills {
+    margin: 15px;
+    height: 5rem;  
+    transition: height 3s;  
+   
+}
+
+.skills:hover {
+    height: 7rem;
+}
+
+.stack {
+    margin-bottom: 40px;
+}
+
+
+/* name initials WK with code signs */
+.navbar-brand {
+    font-family: 'Courier New', Courier, monospace;
+    color:#90d7ff;
+    margin: 2rem;
+}
+
+/* Stack description on mouse hover */
+.tool-tip {
+    color: #0FFD35;
+    position: static;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    display: inline-block;
+    transition: font-size 2s;
+}
+
+/* Carousel image sizes */
+.d-block {
+    height: auto;
+    width: auto;
+    margin-bottom: 2rem;
+}
+
+/* cv text styling */
+.cv {
+    text-decoration: none;
+    font-family: 'Cormorant', serif;
+    color:#90d7ff;
+    font-size: 1.3em;
+
+}
+
+/* media queries for phone size devices */
+@media (max-width: 550px){
+    .skills {
+        margin: 7px;
+        height: 3rem;  
+        transition: height 3s;  
+       
+    }
+    
+    .skills:hover {
+        height: 4rem;
+    }
+
+    .link {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #90d7ff;
+        display:flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 10px;
+        text-decoration: none;
+        font-family: 'Cormorant', serif;
+        transition: font-size 2s;
+    }
+    
+    .link:hover {
+        color:#0FFD35;
+        font-size: 1.3rem;    
+    }
+    
+    .link:active {
+        color: blue;
+    }
+
+    .close {
+        color:#90d7ff;
+        font-size: 1em;
+        font-family: 'Cormorant', serif;
+    }
+}
