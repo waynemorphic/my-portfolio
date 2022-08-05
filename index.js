@@ -1,6 +1,6 @@
 // adding WK logo
 let brand = document.querySelector(".navbar-brand");
-brand.textContent = "<WK/>";
+brand.textContent = "<wk/>";
 
 // console.log(brand)
 
