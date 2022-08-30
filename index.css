@@ -1,41 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-* {
-    background-color: #010a0f;
-    /* background-image: linear-gradient(315deg, #485461 0%, #28313b 74%); */
-}
 
 body {
     box-sizing: border-box;
-    /* border: 7px solid #0FFD35;  */
-    margin: 15px 15px 105px 75px;
-
 }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
 
 /* navigation bar links */
-.link {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #90d7ff;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin: 10px;
-    text-decoration: none;
+
+.wrap {
     font-family: 'Cormorant', serif;
-    /* transition: color 2s; */
+    text-align: center;
+    /* display: block; */
+    /* position: fixed;  */
+    /* top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; */
+
+    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
+    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+    /* background: #000; */
+    /* clip-path: circle(25px at calc(100% - 45px) 45px); */
+    /* transition: all 0.3s ease-in-out; */
 }
 
-.link:hover {
-    color: #0FFD35;
-    font-size: 1.5rem;
+.wrap ul {
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center; */
 }
 
-.link:active {
-    color: blue;
+.wrap ul li a {
+    color: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 50px;
+    background: #000;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+.wrap ul li a:after{
+    position: absolute;
+    content: "";
+    background: #fff;
+     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+    width: 104%;
+    height: 110%;
+    left: -2%;
+    top: -5%; /* if the font is 'Oswald'*/
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    animation: rotate 1.5s linear infinite;
+    transition: transform 0.3s ease;
+  }
+  .wrap ul li a:hover:after{
+    transform: scaleY(1);
+  }
+  .wrap ul li a:hover{
+    color: #fff;
+  }
+
+/* introduction section */
+.intro-par {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    /* width: 100vh; */
+    /* transform: translate(-50%, -50%); */
+    font-size: 3rem;
+    font-family: 'Cormorant', serif;
+    /* text-align: center; */
+
 }
 
 /* my name heading */
@@ -45,6 +107,29 @@ body {
     flex-wrap: wrap;
     color: #0FFD35;
 }
+
+.card-left {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    width: 600px;
+}
+
+.inner-card-left {
+    background-color: #2A265F;
+    color: #fff;
+    padding: 20px;
+    max-width: 250px;
+} 
+
+
+
+
+
 
 /* section headings */
 .name-head {
@@ -56,18 +141,13 @@ body {
 }
 
 /* introductory paragraph */
-.intro-par {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    font-family: 'Cormorant', serif;
 
-}
 
 /* Body paragraphs */
 .pars {
     color: #0FFD35;
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: left;
     font-family: 'Cormorant', serif;
 
 
@@ -113,15 +193,15 @@ body {
 
 /* Stack logos for various languages and frameworks */
 .skills {
-    margin: 15px;
-    height: 5rem;
+    margin: 10px;
+    height: 4rem;
     transition: height 3s;
 
 }
 
-.skills:hover {
-    height: 7rem;
-}
+/* .skills:hover {
+    height: 5rem;
+} */
 
 .stack {
     margin-bottom: 40px;
@@ -162,7 +242,7 @@ body {
 }
 
 /* media queries for phone size devices */
-@media (max-width: 550px) {
+@media (max-width: 640px) {
     .skills {
         margin: 7px;
         height: 3rem;
@@ -200,5 +280,18 @@ body {
         color: #90d7ff;
         font-size: 1em;
         font-family: 'Cormorant', serif;
+    }
+
+    .intro-par {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+        /* width: 100vh; */
+        /* transform: translate(-50%, -50%); */
+        font-size: 1.8rem;
+        font-family: 'Cormorant', serif;
+        text-align: justify;
+    
     }
 }
