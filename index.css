@@ -5,10 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 body {
     box-sizing: border-box;
+    font-family: 'Cormorant', serif;
+
 }
 
 
@@ -16,6 +18,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
     
   }
 
@@ -114,7 +118,6 @@ body {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     max-width: 100%;
-    margin: 20px;
     overflow: hidden;
     width: 600px;
 }
@@ -145,14 +148,24 @@ body {
 
 /* Body paragraphs */
 .pars {
-    color: #0FFD35;
-    font-size: 1.2rem;
+    color: white;
+    font-size: 1.6rem;
     text-align: left;
-    font-family: 'Cormorant', serif;
-
+    word-spacing: 2.5px;
+    font-family: 'Raleway', sans-serif;
 
 }
 
+.fonting {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.fonting-heads {
+    font-family: 'Cormorant', serif;
+    font-size: 30px;
+
+}
 /* Resume circles with downloadable cv */
 .outer {
     background-color: #010a0f;
@@ -185,12 +198,19 @@ body {
 
 /* contact, location and copyright details */
 .close {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.crights {
+    /* font-size: 1.2em; */
+    font-family: 'Cormorant', serif;
     color: #90d7ff;
     font-size: 1.2em;
     font-family: 'Cormorant', serif;
+
 }
-
-
 /* Stack logos for various languages and frameworks */
 .skills {
     margin: 10px;
@@ -277,21 +297,21 @@ body {
     }
 
     .close {
-        color: #90d7ff;
-        font-size: 1em;
-        font-family: 'Cormorant', serif;
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Raleway', sans-serif;
     }
 
     .intro-par {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 40vh;
-        /* width: 100vh; */
+        height: 35vh;
+        width: 50vh;
         /* transform: translate(-50%, -50%); */
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-family: 'Cormorant', serif;
-        text-align: justify;
+        text-align: left;
     
     }
 }
