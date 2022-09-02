@@ -30,5 +30,18 @@ toolTipElements.forEach( function(toolTipParameter){
 
 })
 
+let clickFront = document.getElementById("front");
+clickFront.addEventListener("click", onClick);
 
+function onClick(){
+    clickFront.textContent = "HTML5 | Angular | ReactJS | Bootstrap | TailwindCSS | Javascript"
+    clickFront.style.color = "white"
+}
 
+let clickBack = document.getElementById("back");
+clickBack.addEventListener("click", clickMe);
+
+function clickMe(){
+    clickBack.textContent = "Django | Flask | PostgreSQL | MySQL | NodeJS | Python"
+    clickBack.style.color = "white"
+}
