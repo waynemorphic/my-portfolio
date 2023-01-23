@@ -42,6 +42,6 @@ let clickBack = document.getElementById("back");
 clickBack.addEventListener("click", clickMe);
 
 function clickMe(){
-    clickBack.textContent = "Django | Flask | PostgreSQL | MySQL | NodeJS | Python"
+    clickBack.textContent = "Django | Flask | PostgreSQL | MySQL | Springboot | Python | Java"
     clickBack.style.color = "white"
 }
