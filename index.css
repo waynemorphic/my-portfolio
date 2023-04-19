@@ -10,47 +10,20 @@
 body {
     box-sizing: border-box;
     font-family: 'Cormorant', serif;
-
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
-    
-  }
+}
 
 /* navigation bar links */
 
 .wrap {
     font-family: 'Cormorant', serif;
     text-align: center;
-    /* display: block; */
-    /* position: fixed;  */
-    /* top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; */
-
-    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
-    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
-    /* background: #000; */
-    /* clip-path: circle(25px at calc(100% - 45px) 45px); */
-    /* transition: all 0.3s ease-in-out; */
-}
-
-.wrap ul {
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center; */
 }
 
 .wrap ul li a {
@@ -67,28 +40,30 @@ body {
     transition: all 0.3s ease;
 }
 
-.wrap ul li a:after{
+.wrap ul li a:after {
     position: absolute;
     content: "";
     background: #fff;
-     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-    /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
     width: 104%;
     height: 110%;
     left: -2%;
-    top: -5%; /* if the font is 'Oswald'*/
+    top: -5%;
+    /* if the font is 'Oswald'*/
     border-radius: 50px;
     transform: scaleY(0);
     z-index: -1;
     animation: rotate 1.5s linear infinite;
     transition: transform 0.3s ease;
-  }
-  .wrap ul li a:hover:after{
+}
+
+.wrap ul li a:hover:after {
     transform: scaleY(1);
-  }
-  .wrap ul li a:hover{
+}
+
+.wrap ul li a:hover {
     color: #fff;
-  }
+}
 
 /* introduction section */
 .intro-par {
@@ -127,7 +102,7 @@ body {
     color: #fff;
     padding: 20px;
     max-width: 250px;
-} 
+}
 
 
 
@@ -166,6 +141,7 @@ body {
     font-size: 30px;
 
 }
+
 /* Resume circles with downloadable cv */
 .outer {
     background-color: #010a0f;
@@ -211,6 +187,7 @@ body {
     font-family: 'Cormorant', serif;
 
 }
+
 /* Stack logos for various languages and frameworks */
 .skills {
     margin: 10px;
@@ -312,6 +289,6 @@ body {
         font-size: 2rem;
         font-family: 'Cormorant', serif;
         text-align: left;
-    
+
     }
 }
