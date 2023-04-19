@@ -2,20 +2,19 @@
 let brand = document.querySelector(".navbar-brand");
 brand.textContent = "<wk/>";
 
-// console.log(brand)
 
 // tooltip for the stack name
 let stackName = document.querySelector(".stack");
 let toolTipElements = document.querySelectorAll("[data-tooltip-text]");
-toolTipElements.forEach( function(toolTipParameter){
-    toolTipParameter.addEventListener("mouseover", function (e){
+toolTipElements.forEach(function (toolTipParameter) {
+    toolTipParameter.addEventListener("mouseover", function (e) {
         let newElement = document.createElement("p");
-        newElement.classList.add("tool-tip");        
+        newElement.classList.add("tool-tip");
 
         let toolTipContent = e.currentTarget.getAttribute("data-tooltip-text");
         newElement.innerText = toolTipContent;
-        document.querySelectorAll(".tool-tip").forEach(function(tooltip){
-        tooltip.remove();
+        document.querySelectorAll(".tool-tip").forEach(function (tooltip) {
+            tooltip.remove();
         });
 
         let newElementCoordinates = e.currentTarget.getBoundingClientRect();
@@ -23,25 +22,21 @@ toolTipElements.forEach( function(toolTipParameter){
         newElement.style.left = newElementCoordinates.left + "px";
         newElement.style.top = newElementCoordinates.top + "px";
         stackName.appendChild(newElement)
-
-        
-
     })
-
 })
 
 let clickFront = document.getElementById("front");
 clickFront.addEventListener("click", onClick);
 
-function onClick(){
-    clickFront.textContent = "HTML5 | Angular | ReactJS | Bootstrap | TailwindCSS | Javascript"
+function onClick() {
+    clickFront.textContent = "HTML5 | ReactJS | Bootstrap | TailwindCSS | Javascript"
     clickFront.style.color = "white"
 }
 
 let clickBack = document.getElementById("back");
 clickBack.addEventListener("click", clickMe);
 
-function clickMe(){
-    clickBack.textContent = "Django | Flask | PostgreSQL | MySQL | Springboot | Python | Java | Apache Camel | Maven"
+function clickMe() {
+    clickBack.textContent = "Java | Springboot | Python | PostgreSQL | MySQL |  Apache Camel | ActiveMQ"
     clickBack.style.color = "white"
 }
