@@ -19,6 +19,11 @@ body {
     box-sizing: border-box;
 }
 
+.card-img-top{
+    width: 200px;
+    height: 300px;
+}
+
 /* navigation bar links */
 
 .wrap {
