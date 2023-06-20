@@ -29,7 +29,7 @@ let clickFront = document.getElementById("front");
 clickFront.addEventListener("click", onClick);
 
 function onClick() {
-    clickFront.textContent = "HTML5 | ReactJS | Bootstrap | TailwindCSS | Javascript"
+    clickFront.textContent = "HTML5 | React JS | Bootstrap | Tailwind CSS | JavaScript"
     clickFront.style.color = "white"
 }
 
@@ -37,6 +37,6 @@ let clickBack = document.getElementById("back");
 clickBack.addEventListener("click", clickMe);
 
 function clickMe() {
-    clickBack.textContent = "Java | Springboot | Python | PostgreSQL | MySQL |  Apache Camel | ActiveMQ"
+    clickBack.textContent = "Java | Spring boot | Python | PostgreSQL | MySQL |  Apache Camel | ActiveMQ"
     clickBack.style.color = "white"
 }
