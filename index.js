@@ -37,6 +37,6 @@ let clickBack = document.getElementById("back");
 clickBack.addEventListener("click", clickMe);
 
 function clickMe() {
-    clickBack.textContent = "Java | Spring boot | Python | PostgreSQL | MySQL |  Apache Camel | ActiveMQ"
+    clickBack.textContent = "Java | Spring boot | Kotlin | Golang | PostgreSQL | MySQL |  Apache Camel | ActiveMQ"
     clickBack.style.color = "white"
 }
